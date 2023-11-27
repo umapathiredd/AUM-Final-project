@@ -1,0 +1,141 @@
+/* *{
+    margin:0; 
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+    background-image: url('./aum3.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin: 0 auto; /* Center the content */
+    max-width: 1000px; /* Set the maximum width */
+}
+
+footer {
+    background-color: rgb(255, 81, 0);
+    padding: 20px;
+    color: #050505;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin: 0px auto; /* Center the content and add some space at the top */
+    max-width: 1000px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.leftside {
+    float: left;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.content {
+    background-color: rgb(212, 208, 208);
+    border: 3px solid black;
+}
+
+#nav_heading {
+    background-image: -webkit-linear-gradient(45deg, white 0%, rgb(255, 72, 0) 75%);
+    background-image: -moz-linear-gradient(45deg, white 0%, rgb(255, 72, 0) 75%);
+    background-image: -o-linear-gradient(45deg, white 0%, rgb(255, 72, 0) 75%);
+    background-image: linear-gradient(45deg, white 0%, rgb(255, 72, 0) 75%);
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex; /* Use flexbox to make it responsive */
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%; /* Take up the entire width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.navbar .active {
+    background-color: #040404;
+    color: rgb(250, 127, 27);
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.column::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 100%;
+    border-left: 4px solid #f47215;
+}
+
+.column:last-child::before {
+    display: none;
+}
+
+hr {
+    height: 1px ;
+    margin: 20px 0;
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(182, 181, 181);
+}
+
+tr:hover {
+    background-color: #cfcece;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/TA.css">
+    <script>
+        function updateCheckbox(checkboxId) {
+            var checkboxes = document.querySelectorAll('[name="gender"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = checkbox.id === checkboxId;
+            });
+        }
+    </script>
+</head>
+    
+<body>
+    <body>
+        <img src="./images/logo.png" alt="AUM" class="leftside" height="120px" width="120px">
+        <header>
+            <h1 id="nav_heading">Computer Science Department</h1>
+        </header>
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./description.html">Program Description</a></li>
+                <li><a class="active" href="./TA.html">TA Application</a></li>
+                <li><a href="./GPA.html">GPA Calculator</a></li>
+            </ul>
+        </div>
+
+    <div class="content">
+    
+    <form name="myform" action="survey_data.html" method="get">
+        <h1>Teaching Assistant Application Form</h1>
+        <br>
+        <h2>Application Information</h2>
+        <br>
+
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required>
+        <br>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required>
+        <br>
+
+        <!-- Student ID -->
+        <label for="studentID">Student ID:</label>
+        <input type="text" name="studentID" id="studentID" required>
+        <br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="checkbox" name="gender" id="male" value="male" onclick="updateCheckbox('male')">
+        <label for="male">Male</label>
+        <input type="checkbox" name="gender" id="female" value="female" onclick="updateCheckbox('female')">
+        <label for="female">Female</label>
+        <br>
+        <br>
+
+        <!-- GPA -->
+        <label for="gpa">GPA:</label>
+        <input type="text" name="gpa" id="gpa" required>
+        <br>
+
+        <!-- Comments -->
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments"></textarea>
+        <br>
+        <br>
+        <h2>Thank You For completing application!</h2>
+        <br>
+        <div class="buttons">
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset">
+        </div>
+    </form>
+</div>
+</body>
+<footer>
+    <div class="container">
+        <div id="address">
+            <p>7400 East Drive   2023
+                <br>
+                Montgomery, AL 36117
+                <br>
+                Local: 334-244-3000
+                <br>
+                Toll-Free: 800-227-2649</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2020 UMAPATHI REDDY SOLIPATE</p>
+        </div>
+        <div id="social-media">
+            <img id="fb" src="images/facebook-social-network-logo.png">
+            <img id="pin" src="images/pinterest-logo.png">
+            <img id="twt" src="images/twt.jpeg">
+        </div>
+    </div>
+</footer>
+
+</html>
